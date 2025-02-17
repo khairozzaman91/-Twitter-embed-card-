@@ -1,6 +1,6 @@
 # challenges_ui
 
-A new Flutter project.
+this Twitter embed card using Flutter.
 
 ## Getting Started
 
@@ -14,3 +14,6 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+
+![Twitter](https://github.com/user-attachments/assets/8244e5a8-12b0-469d-9b07-c23117ceb4a9)
