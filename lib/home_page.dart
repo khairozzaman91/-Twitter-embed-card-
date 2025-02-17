@@ -19,50 +19,63 @@ class _HomePageState extends State<HomePage> {
           children: [
 
             Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                const CircleAvatar(
-                  radius: 25,
-                  backgroundImage: AssetImage('assets/andrea-avatar.png'),
+               Row(
+                 children: [
+                   const CircleAvatar(
+                     radius: 25,
+                     backgroundImage: AssetImage('assets/andrea-avatar.png'),
+                   ),
+                   const SizedBox(width: 15),
+                   Column(
+                     crossAxisAlignment: CrossAxisAlignment.start,
+                     children: [
+                       Row(
+                         children: [
+                           const Text(
+                             'Andrea Bizzotto',
+                             style: TextStyle(
+                               fontSize: 17,
+                               fontWeight: FontWeight.bold,
+                               color: Colors.black,
+                             ),
+                           ),
+                           const SizedBox(width: 5),
+                           SvgPicture.asset(
+                             'assets/icon_heart_blue.svg',
+                             width: 20,
+                             height: 20,
+                             fit: BoxFit.cover,
+                           ),
+                         ],
+                       ),
+                       const Row(
+                         children: [
+                           Text('@biz84'),
+                           SizedBox(width: 12),
+                           Text(
+                             'Follow',
+                             style: TextStyle(
+                               fontSize: 17,
+                               fontWeight: FontWeight.bold,
+                               color: Colors.blueAccent,
+                             ),
+                           ),
+                         ],
+                       ),
+                     ],
+                   ),
+                 ],
+               ),
+                SvgPicture.asset(
+                  'assets/icon_x.svg',
+                  width: 25,
+                  height: 25,
                 ),
-                const SizedBox(width: 15),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Row(
-                      children: [
-                        const Text(
-                          'Andrea Bizzotto',
-                          style: TextStyle(
-                            fontSize: 17,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.black,
-                          ),
-                        ),
-                        const SizedBox(width: 5),
-                        SvgPicture.asset(
-                          'assets/icon_heart_blue.svg',
-                          width: 20,
-                          height: 20,
-                          fit: BoxFit.cover,
-                        ),
-                      ],
-                    ),
-                    const Row(
-                      children: [
-                        Text('@biz84'),
-                        SizedBox(width: 12),
-                        Text(
-                          'Follow',
-                          style: TextStyle(
-                            fontSize: 17,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.blueAccent,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ],
-                )
+
+
               ],
             ),
 
